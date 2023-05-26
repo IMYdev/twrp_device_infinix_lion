@@ -14,7 +14,7 @@ on:
       DEVICE_TREE_URL:
         description: 'DEVICE_TREE_URL'
         required: true
-        default: 'https://github.com/Infinix-MTK/twrp_device_infinix_X6816'
+        default: 'https://github.com/IJoseph23/twrp_device_infinix_X6816'
       DEVICE_TREE_BRANCH:
         description: 'DEVICE_TREE_BRANCH'
         required: true
