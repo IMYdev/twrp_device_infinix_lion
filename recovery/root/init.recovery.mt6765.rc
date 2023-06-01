@@ -8,7 +8,6 @@ on fs
     install_keyring
 
     write /sys/class/power_supply/usb/otg_switch 1
-    write /sys/class/oplus_chg/usb/otg_switch 1
 
 service mtk.plpath.utils.link /system/bin/mtk_plpath_utils
     class main
