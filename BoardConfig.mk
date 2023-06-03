@@ -26,7 +26,7 @@ TARGET_2ND_CPU_VARIANT := generic
 TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a53
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := Infinix-X6816,X6816
+TARGET_OTA_ASSERT_DEVICE := X6816,FULL-64
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := CY-X6816-XQ683-A
@@ -152,10 +152,12 @@ TW_EXTRA_LANGUAGES := true
 TW_INCLUDE_NTFS_3G := true
 TW_NO_SCREEN_BLANK := true
 TW_SCREEN_BLANK_ON_BOOT := true
-#TW_LOAD_VENDOR_MODULES := "novatek_ts_fw.bin novatek_ts_mp.bin"
 TW_INCLUDE_RESETPROP := true
 TW_INCLUDE_REPACKTOOLS := true
 TW_HAS_MTP := true
+
+# Recovery fstab
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/system/etc/recovery.fstab
 
 # Debug
 TWRP_INCLUDE_LOGCAT := true
