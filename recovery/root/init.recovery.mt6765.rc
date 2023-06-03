@@ -61,11 +61,13 @@ service gatekeeper-1-0 /system/bin/android.hardware.gatekeeper@1.0-service
     seclabel u:r:recovery:s0
     
 on property:vendor.sys.listener.registered=true
-    start gatekeeper-1-0
     start keymaster-4-0
+    start gatekeeper-1-0
 
 on property:hwservicemanager.ready=true
+    write /proc/bootprof "MOBICORE: create /data/vendor/mcRegistry ++ (FBE encrypted)"
     start mobicore
+    write /proc/bootprof "MOBICORE: create /data/vendor/mcRegistry -- (FBE encrypted)"
     start keymaster-4-0
     start gatekeeper-1-0
 
