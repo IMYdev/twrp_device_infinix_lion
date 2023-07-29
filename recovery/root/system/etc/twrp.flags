@@ -1,16 +1,10 @@
 # mount point       fstype    device                                                                flags
 
-# Logical partitions
-system				ext4	 /system																flags=display="System";logical;
-system_ext			ext4	 /system_ext															flags=display="System_Ext";logical;
-product				ext4	 /product																flags=display="Product";logical;
-vendor				ext4	 /vendor																flags=display="Vendor";logical;
-
 # Symlinked partitions
-/system_image		ext4	 /dev/block/dm-3														flags=backup=1;wipeingui;flashimg=1;display="System Image";
-/system_ext_image	ext4	 /dev/block/dm-0														flags=backup=1;wipeingui;flashimg=1;display="System Ext Image";
-/product_image		ext4	 /dev/block/dm-1														flags=backup=1;wipeingui;flashimg=1;display="Product Image";
-/vendor_image		ext4	 /dev/block/dm-2														flags=backup=1;wipeingui;flashimg=1;display="Vendor Image";
+/system_image		ext4	 /dev/block/dm-5														flags=backup=1;wipeingui;flashimg=1;display="System";
+/system_ext_image	ext4	 /dev/block/dm-2														flags=backup=1;wipeingui;flashimg=1;display="System Ext";
+/product_image		ext4	 /dev/block/dm-3														flags=backup=1;wipeingui;flashimg=1;display="Product";
+/vendor_image		ext4	 /dev/block/dm-4														flags=backup=1;wipeingui;flashimg=1;display="Vendor";
 
 # Physical partitions
 /tranfs             ext4      /dev/block/platform/bootdevice/by-name/tranfs                         flags=display="Tranfs";
