@@ -3,8 +3,6 @@ import /trustonic.rc
 
 on init
     export LD_LIBRARY_PATH /system/lib64:/vendor/lib64:/vendor/lib64/hw:/system/lib64/hw
-    chmod 0666 /sys/devices/platform/tran_battery/OTG_CTL
-    write /sys/devices/platform/tran_battery/OTG_CTL 1
 
 on post-fs
     # Support A/B feature for EMMC boot region
