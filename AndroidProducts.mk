@@ -6,9 +6,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/twrp_X6816.mk
+    $(LOCAL_DIR)/twrp_lion.mk
 
 COMMON_LUNCH_CHOICES := \
-    twrp_X6816-user \
-    twrp_X6816-userdebug \
-    twrp_X6816-eng
+    twrp_lion-user \
+    twrp_lion-userdebug \
+    twrp_lion-eng

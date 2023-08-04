@@ -7,6 +7,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),X6816)
+ifeq ($(TARGET_DEVICE),lion)
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
 endif

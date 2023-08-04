@@ -5,7 +5,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-LOCAL_PATH := device/infinix/X6816
+LOCAL_PATH := device/infinix/lion
 
 # A/B
 AB_OTA_PARTITIONS += \
